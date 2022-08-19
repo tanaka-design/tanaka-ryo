@@ -739,11 +739,11 @@ h2{
     text-align    : center;      /* 文字位置   */
     cursor        : pointer;     /* カーソル   */
     padding       : 8px 8px;   /* 余白       */
-    background    : #ffffff;     /* 背景色     */
-    color         : #81001d;     /* 文字色     */
+    background    : #61001d;     /* 背景色     */
+    color         : #fff;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     transition    : .3s;         /* なめらか変化 */
-    border        : 2px solid #ffffff;    /* 枠の指定 */
+    border        : 2px solid #61001d;    /* 枠の指定 */
   }
 
   .button2 :hover {
