@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>質問箱</title>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="headersyasin">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" width="150px" srcset="images/logo.jpg 1x, images/logo.jpg 2x">
+                </div></a>
+            <button class="menu-btn" id="mobile-menu"></button>
+        </div>
+    </header>
+
+    <!-- ナビバー -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="zyuutaku.html">住宅</a></li>
+            <li><a href="kagu.html">家具</a></li>
+            <li><a href="situmon.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!--　メイン　-->
+    <main class="container">
+        <h1>お問い合わせ</h1>
+        <ul class="situmona">
+            <li><img src="images/Q.jpg" class="QA">
+            <div class="situmon">
+                お家に不具合があった場合はどうしたらいいですか？</div></li>
+            <li><img src="images/A.jpg" class="QA">
+            <div class="situmon">
+                お家に不具合があった場合には、電話をお伺い次第無償で対応させていただきます。
+            </div></li>
+        </ul>
+        <ul class="situmona">
+            <li><img src="images/Q.jpg" class="QA">
+            <div class="situmon">
+                電気・ガス・水道の契約方法が分からない場合どうしたらいいですか？
+            </div></li>
+            <li><img src="images/A.jpg" class="QA">
+            <div class="situmon">
+                田中不動産のスタッフが電話もしくは訪問してご説明させていただきます。田中不動産でのプランもご利用出来ます。
+            </div></li>
+        </ul>
+        <ul class="situmona">
+            <li><img src="images/Q.jpg" class="QA">
+            <div class="situmon">
+                家賃はどうやって払えばいいですか？
+            </div></li>
+            <li><img src="images/A.jpg" class="QA">
+            <div class="situmon">
+                家賃に関しては、コンビニ払い・銀行引き落としなど他にも色々な方法があります。詳しくは、田中不動産までお電話ください。
+            </div></li>
+        </ul>
+        <ul class="situmona">
+            <li><img src="images/Q.jpg" class="QA">
+            <div class="situmon">
+                自分の好きなように家を建てることは可能ですか？
+            </div></li>
+            <li><img src="images/A.jpg" class="QA">
+            <div class="situmon">
+                可能です。費用・家の構造などのお話が終わり次第、すぐに作業に取り掛からせていただきます！費用の割引もございます。
+            </div></li>
+        </ul>
+        <div class="sen"></div>
+        <div class="situmonform">
+        <h1>お問い合わせを送る</h1>
+        <p class="situmonb">お問い合わせを送信後、数日後にここのホームページに返信と共に表示されます。</p>
+            <form>
+                <h2>名前</h2><br>
+                    <p><input type="text" name="text" id="namae"></p><br>
+                    <h2>お問い合わせ内容</h2><br>
+                    <p><textarea name="textarea1" class="textarea" id="namaetextarea"></textarea><br>
+                    <input type="submit" name="button1" value="送信する！" id="namaesousin">
+                    </p>
+            </form>
+        </div>  
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="zyuutaku.html">住宅</a></li>
+            <li><a href="kagu.html">家具</a></li>
+            <li><a href="situmon.html">お問い合わせ</a></li>
+        </ul>
+        <div class="footeria">
+            tanaka@icloud.com
+        </div>
+    </footer>
+    <script src="script/check.js"></script>
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>
+</html>

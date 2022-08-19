@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>新規登録</title>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="headersyasin">
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img src="../images/logo.jpg" width="150px" srcset="../images/logo.jpg 1x, ../images/logo.jpg 2x">
+                </div></a>
+        </div>
+    </header>
+
+    <!-- ナビバー -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../zyuutaku.html">住宅</a></li>
+            <li><a href="../kagu.html">家具</a></li>
+            <li><a href="../situmon.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <!--　メイン　-->
+<main class="container">
+    <h1>新規登録</h1>
+    <p>お名前</p>
+    <p><input type="text" name="text" id="oname"></p><br>
+    <p>電話番号</p>
+    <p><input type="text" name="text" id="phone"></p><br>
+    <p>郵便番号</p>
+    <p><input type="text" name="text" id="post"></p><br>
+    <p>都道府県</p>
+    <p><input type="text" name="text" id="prefecture"></p><br>
+    <p>ご住所</p>
+    <p><input type="text" name="text" id="address"></p><br>
+    <div class="sen"></div>
+
+    <p>お支払い方法</p>
+    <div class="payment"  required="required">
+        <input type="radio" meta name="payment" value="クレジットカード" id="radio">クレジットカード<br>
+        <input type="radio" meta name="payment" value="コンビニ払い" id="radio">コンビニ払い<br>
+        <input type="radio" meta name="payment" value="銀行引き落とし" id="radio">銀行引き落とし<br>
+        
+    </div>
+        <p><input type="submit" value="登録" class="signbutton" id="signuper"></p>
+
+
+
+</main>
+        <script src="../script/check.js"></script>
+        <script src="../script/siborikomi.js"></script>
+        <script src="../script/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+        <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/js/6-2-1.js"></script>
+</body>
+</html>

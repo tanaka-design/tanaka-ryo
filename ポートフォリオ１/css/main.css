@@ -1,0 +1,655 @@
+@charset "utf-8";
+
+/* すべて共通 */
+html,body{
+	background-color: #f0f0f0;
+}
+body, div, p, h1, h2, h3, h4, ul, figure {
+	margin: 0;
+	padding: 0;
+	color: #2e305c;
+	font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+/* 共通の見出し */
+.container {
+       margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+	max-width: 900px;
+}
+.keyvisual{
+	max-width: 100%;
+	height: 0 auto;
+}
+/* ヘッダー */
+header{
+        background: #30315f;
+}
+.headersyasin{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo {
+	padding: 10px 0;
+	width: 160px;
+	height: 37px;
+}
+.menu-btn {
+	padding: 10px 0 ;
+	border: 3px solid #efefef;
+	border-radius: 4px;
+	width: 40px;
+	height: 40px;
+	background: url(../images/hamburger.jpg) no-repeat center center;
+	background-size: contain;
+}
+
+@media screen and (min-width: 680px) {
+	.header-logo {
+		padding: 10px 0;
+		width: 200px;
+		height: 50px;
+	}
+	.menu-btn {
+		display: none;
+	}
+}
+/*  ナビゲーション  */
+nav{
+       background: #393939;
+	   padding-left: 100px;
+	   padding-right: 100px;
+}
+.navbar{
+        display: none;
+        list-style-type: none;
+}
+.navbar a{
+        display: block;
+        padding: 0.8rem 0;
+        color: #fff;
+        text-decoration: none;
+}
+.navbar a:hover{
+        background: #ffa500;
+}
+
+@media screen and (min-width: 680px) {
+        .navbar{
+                display: flex !important;
+        }
+        .navbar li{
+                flex: 1 1 auto;
+                text-align: center;
+        }
+}
+
+/* メイン */
+main{
+	margin-top: 35px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.indexsen{
+	padding-bottom: 2px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 80px;
+	margin-bottom: 110px;
+	background-color: #2e305c;
+}
+h1{
+	padding-top: 50px;
+	font-size: 29px;
+	text-align: center;
+	color:#2e305c;
+}
+@media screen and (min-width: 680px) {
+	h1{
+		font-size: 30px;
+	}
+}
+
+h2{
+	margin-top: 50px;
+	text-align: left;
+	font-size: 24px;
+}
+.osirase {
+	border-radius: 14px;
+	background-color: #2e305c;
+	list-style-type: none;
+	text-align: left;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	text-align: left;
+	color: #ffffff;
+}
+.osirase li{
+	padding: 12px;
+}
+p{
+	font-size: 21px;
+	text-align: center;
+	margin: 0 20px;
+}
+#tyuukan{
+	font-size: 14.3px;
+}
+p.nomal{
+	overflow-wrap: normal;
+  }
+
+
+.imagek{
+	display: flex;
+	flex-flow: column;
+	list-style-type: none;
+}
+.imagek li{
+	margin: 10px;
+}
+
+@media screen and (min-width: 680px) {
+	.imagek{
+		flex-flow: row;
+	}
+	h1{
+		font-size: 35px;
+	}
+	h2{
+		margin-top: 70px;
+	}
+	#tyuukan{
+		font-size: 22px;
+		padding-top: 10px;
+	}
+}
+
+/*　フッター　*/
+footer{
+	background: #20214f;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 10px;
+}
+.footer-nav{
+	 list-style-type: none;
+}
+.footer-nav a{
+	 display: block;
+	 padding: 0.7rem 0;
+	 color: #fff;
+	 text-decoration: none;
+	 font-size: 17px;
+}
+
+.footeria{
+	color: #efefef;
+	text-align: center;
+}
+.footer-nav li{
+	flex: 1 1 auto;
+	text-align: center;
+}
+@media screen and (min-width: 680px) {
+	 .footer-nav{
+			 display: flex !important;
+	 }
+	 .footer-nav li{
+			padding-top: 10px;
+			flex: 1 1 auto;
+			text-align: center;
+	 }
+	 .footeria{
+		 background-color: #20214f;
+		color: #efefef;
+		text-align: right;
+		font-size: 17px;
+		padding-top: 15px;
+		padding-right: 2px;
+		padding-bottom: 3px;
+	}	
+}
+/* zyuutaku.html */
+.search-box_label {
+	font-weight: bold;
+  }
+  .is-hide {
+	display: none;
+  }
+  .gallery{
+	columns: 4;/*段組みの数*/
+	padding:0 15px;/*ギャラリー左右に余白をつける*/
+	list-style-type: none;
+	}
+	
+	.gallery li {
+		margin-bottom: 20px;/*各画像下に余白をつける*/
+	}
+	
+	/*ギャラリー内のイメージは横幅100%にする*/
+	.gallery img{
+	  width:100%;
+	  height:auto;
+	  vertical-align: bottom;/*画像の下にできる余白を削除*/}
+	
+	/*　横幅900px以下の段組み設定　*/
+	@media only screen and (max-width: 900px) {
+	  .gallery{
+	  columns:3;
+	  } 
+	}
+	
+	@media only screen and (max-width: 768px) {
+	  .gallery{
+	  columns: 2;
+	  } 
+	}
+	
+	
+	/*画像を出現させるアニメーションCSS*/
+	
+	.flipLeft{
+	animation-name: flipLeft;
+	animation-duration:0.5s;
+	animation-fill-mode:forwards;
+	perspective-origin: left center;
+	opacity: 0;
+	}
+	
+	@keyframes flipLeft{
+	  from {
+	   transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+	  opacity: 0;
+	  }
+	
+	  to {
+	  transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+	  opacity: 1;
+	  }
+	}
+/* kagu.html */
+
+.katarogu{
+	list-style-type: none;
+}
+.katarogu li{
+	margin: 0 15px;
+	width: auto;
+}
+
+
+@media screen and (min-width: 680px) {
+	.katarogu{
+		list-style-type: none;
+		display: flex;
+	}
+}
+
+/* situmon.html */
+
+.QA{
+	width: 35px;
+}
+.situmon{
+	font-size: 13px;
+	color: #000;
+}
+.situmona{
+	margin-bottom: 15px;
+	background-color: #ffffff;
+	border: 2px #20214f solid;
+	border-radius: 14px;
+	list-style-type: none;
+}
+
+textarea {
+	resize:none;
+	text-align: center;
+	padding: 5% 10%;
+	font-size: 10px;
+	color:#666666;
+}
+@media screen and (min-width: 680px) {
+	.QA{
+		width: 48px;
+		padding-top: 10px;
+		padding-left: 12px;
+	}
+	.situmon{
+		font-size: 15px;
+		padding-bottom: 10px;
+		padding-left: 8px;
+		}
+	.situmona{
+		list-style-type: none;
+	}
+}
+.sen{
+	background-color: #efefef;
+	padding-top: 2px;
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+.situmonform h1{
+	padding-top: 20px;
+}
+.situmonform h2{
+	text-align: center;
+	margin-top: 15px;
+}
+.situmonform p{
+	margin-bottom: 30px;
+}
+.br::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+.bra::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+.situmonb{
+	padding-top: 12px;
+	padding-bottom: 20px;
+}
+.search-boxa{
+	text-align: center;
+	font-size: 20px;
+}
+@media screen and (min-width: 680px){
+	.br::before {
+		content: none;
+	}
+}
+
+/* 購入ページ */
+.image_1{
+	width: 100%;
+	text-align: left;
+	margin-top: 10px;
+}
+.kounyuu{
+	display: flex;
+	flex-flow: row;
+}
+.setumei{
+	padding-right:6%;
+	padding-left: 13%;
+	padding-top: 10%;
+	text-align: center;
+	font-size: 17px;
+}
+.setumei p{
+	text-align: center;
+	font-size: 15px;
+	margin: 0 0;
+	margin-bottom: 10%;
+}
+.kuuhaku{
+	padding-bottom: 30px;
+}
+
+.button {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 14pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 8px 13px;   /* 余白       */
+	background    : #ffaa00;     /* 背景色     */
+	color         : #000000;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 3px 3px #666666;  /* 影の設定 */
+	border        : 2px solid #ffaa00;    /* 枠の指定 */
+	margin-top: 20px;
+  }
+  .button:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #ffaa00;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+  }
+
+  .senb{
+	padding-bottom: 1px;
+	background-color: #2e305c;
+	margin-bottom: 30px;
+	margin-top: 50px;
+  }
+  @media screen and (min-width: 680px){
+	.image_1{
+		width: 100%;
+		text-align: left;
+		margin-top:  7%;
+		padding-left: 8%;
+	}
+	.setumei{
+		padding-left: 10%;
+		text-align: center;
+		font-size: 17px;
+	}
+	.setumei p{
+		text-align: center;
+		font-size: 30px;
+		margin: 0 0;
+		padding-top: 5%;
+		padding-bottom: 10%;
+	}
+	
+	.button {
+		display       : inline-block;
+		border-radius : 5%;          /* 角丸       */
+		font-size     : 20pt;        /* 文字サイズ */
+		text-align    : center;      /* 文字位置   */
+		cursor        : pointer;     /* カーソル   */
+		padding       : 8px 13px;   /* 余白       */
+		background    : #ffaa00;     /* 背景色     */
+		color         : #000000;     /* 文字色     */
+		line-height   : 1em;         /* 1行の高さ  */
+		transition    : .3s;         /* なめらか変化 */
+		box-shadow    : 3px 3px #666666;  /* 影の設定 */
+		border        : 2px solid #ffaa00;    /* 枠の指定 */
+		margin-top: 20px;
+	  }
+	  .button:hover {
+		box-shadow    : none;        /* カーソル時の影消去 */
+		color         : #ffaa00;     /* 背景色     */
+		background    : #ffffff;     /* 文字色     */
+	  }
+  }
+
+  /*　mae.html */
+  .loginpage{
+	  background-color: #ffffff;
+	  max-width: 300px;
+	  margin: 0 auto;
+  }
+  .loginpage p{
+	  padding: 10px;
+	  color: #000;
+  }
+  .loginpage input{
+  text-align: center;
+  }
+
+  /*　ログイン */
+  .loginbutton {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 18pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 70px;   /* 余白       */
+	background    : #fff700;     /* 背景色     */
+	color         : #393939;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 3px 3px #666666;  /* 影の設定 */
+	border        : 2px solid #fff700;    /* 枠の指定 */
+  }
+  .loginbutton:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #fff700;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+  }
+
+  /* 新規登録 */
+  .signupbutton {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 17pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 70px;   /* 余白       */
+	background    : #ffaa00;     /* 背景色     */
+	color         : #393939;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 4px 4px #666666;  /* 影の設定 */
+	border        : 2px solid #ffaa00;    /* 枠の指定 */
+  }
+  .signupbutton:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #ffaa00;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+	background-image: url("../iamges/signupbutton");
+  }
+
+  /* signup.html */
+  .payment{
+	  background-color: #ffffff;
+	  text-align: left;
+	  color: #000;
+	  margin: 20px;
+  }
+  .payment input{
+	  margin: 12px 10px;
+  }
+
+ /* 登録 */
+  .signbutton {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 17pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 70px;   /* 余白       */
+	background    : #ffaa00;     /* 背景色     */
+	color         : #393939;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 4px 4px #666666;  /* 影の設定 */
+	border        : 2px solid #ffaa00;    /* 枠の指定 */
+  }
+  .signbutton:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #ffaa00;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+	background-image: url("../iamges/signupbutton");
+  }
+
+  .signbutton {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 17pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 70px;   /* 余白       */
+	background    : #ffaa00;     /* 背景色     */
+	color         : #393939;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 4px 4px #666666;  /* 影の設定 */
+	border        : 2px solid #ffaa00;    /* 枠の指定 */
+  }
+  .signbutton:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #ffaa00;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+	background-image: url("../iamges/signupbutton");
+  }
+
+  /*login.html*/       /* 次へ進む */
+  .nextbutton {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 17pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 70px;   /* 余白       */
+	background    : #ffaa00;     /* 背景色     */
+	color         : #393939;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 4px 4px #666666;  /* 影の設定 */
+	border        : 2px solid #ffaa00;    /* 枠の指定 */
+  }
+  .nextbutton:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #ffaa00;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+	background-image: url("../iamges/signupbutton");
+  }
+
+  /* confilm.html */
+  .confilmbutton {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 17pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 70px;   /* 余白       */
+	background    : #ffaa00;     /* 背景色     */
+	color         : #393939;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 4px 4px #666666;  /* 影の設定 */
+	border        : 2px solid #ffaa00;    /* 枠の指定 */
+  }
+  .confilmbutton:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #ffaa00;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+	background-image: url("../iamges/signupbutton");
+  }
+  #confilm{
+	  padding-top: 300px;
+	  padding-bottom: 100px;
+  }
+
+  /* thankyou */
+  #thankyou{
+	  margin-top: 80px;
+	  margin-bottom: 40px;
+	  font-size: 35px;
+	  text-align: center;
+  }
+  #detail{
+	  font-size: 17px;
+  }
+  #situmonthankyou{
+	  margin-top: 10px;
+	  font-size: 16px;
+	  color: #ffa500;
+	  margin-bottom: 80px;
+  }
+
+
+/* finalcheck */
+  #mailtextarea{
+	  margin-bottom:30px;
+	  margin-top: 20px;
+  }
+
+  #e-mail{
+	  padding-top: 60px;
+  }
