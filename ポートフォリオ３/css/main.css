@@ -16,7 +16,6 @@ body, div, p, h1, h2, h3, h4, ul, figure {
 img{
 	width: 100%;
 	height: auto;
-	border-radius: 6px;
 }			
 
 /* 共通の見出し */
@@ -242,7 +241,7 @@ main{
 .button3{
 	text-align: center;
 	background-color:#fff;
-	color: #242424;
+	color: #555;
 	border: 2px solid #777;
 	border-radius: 7px;
 	padding: 5px;
@@ -329,6 +328,7 @@ main{
 .arrival-img{
 	width: 80%;
 	height: auto;
+	border-radius: 6px;
 }
 
 
@@ -422,10 +422,11 @@ main{
 
 /* about.html */
 .aboutimg1{
-	height: auto;
-	width: 85%;
+	height: 250px;
+	width: 250px;
 	margin: 10px;
-	border-radius: 50%;
+	border-radius: 50px;
+	margin-top: 50px;
 }
 .abouth2-1{
 	text-align: center;
@@ -450,9 +451,10 @@ main{
 .aboutimg2{
 	border: solid #fff 1px;
 	width: 45%;
+	margin-top: 10px;
 }
 .border1-about{
-	margin-top: 5px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	padding-top: 1px;
 	background-color: #242424;
@@ -621,7 +623,7 @@ main{
 	.flex-syouhin img{
 		text-align: center;
 		max-width: 90%;
-		border-radius: 4px;
+		border-radius: 2px;
 		margin-top: 20px;
 	}
 	.flex-syouhin p{
@@ -665,6 +667,7 @@ main{
 	}
 	.syouhin-flex img{
 		max-width: 260px;
+		border-radius: 6px;
 
 	}
 	.flex-syouhin3 h2{
@@ -983,7 +986,7 @@ main{
 	.flex-2{
 		display: flex;
 		justify-content: center;
-		margin-top: 30px;
+		margin-top: 60px;
 	}
 	.flex-3{
 		margin-left: 8%;
@@ -1015,8 +1018,8 @@ main{
 		margin-bottom: 80px;
 	}
 	.aboutimg1{
-		height: auto;
-		width: 20%;
+		height: 250px;
+		width: 250px;
 		margin: 10px;
 		border-radius: 30px;
 	}
