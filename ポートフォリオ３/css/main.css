@@ -1,0 +1,1172 @@
+@charset "utf-8";
+
+/* すべて共通 */
+
+body{
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 40px;
+		color: #242424;
+}
+body, div, p, h1, h2, h3, h4, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+}			
+
+/* 共通の見出し */
+h1{
+	font-size: 20px;
+}
+h2{
+	font-size: 31px;
+}
+h3{
+	font-size: 23px;
+}
+h5{
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+ul{
+	list-style-type: none;
+}
+/* ヘッダー */
+header{
+	height: 60px;
+	width: auto;
+	background-color:#fff;
+}
+.header-main{
+	display: flex;
+}
+
+
+/* --アイコンとハンバーガー　--*/
+.header-main h1{
+	font-size:23px;
+	margin-left: 5%;
+}
+.header-main a{
+	text-decoration: none;
+	color :#242424;
+}
+.footer-main h1{
+	font-size:23px;
+	margin-left: 2%;
+}
+.footer-main a{
+	text-decoration: none;
+	color :#fff;
+}
+@media screen and (min-width: 790px) {
+	.header-main h1{
+		font-size:23px;
+		margin-left: 3%;
+	}
+	#g-nav {
+		margin: 10px;
+		margin: auto;
+		margin-right: 80px;
+	}
+	#g-nav ul{
+		display: flex !important;
+	}
+	#g-nav li{
+		font-size: 18px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.menu-btn{
+		display: none;
+	}
+	#g-nav a {
+		display: block;
+		padding: 0.6rem 0;
+		text-decoration: none;
+		color: #242424;
+	}
+	#g-nav a:hover{
+		color:darkgoldenrod;
+	}
+}
+
+/* キービジュアル */
+.keyvisual{
+	max-width: 100%;
+	height: 0 auto;
+}
+.keyvisualmini{
+	height: 300px;
+	background-color: #242424;
+	margin-bottom: 40px;
+}
+.indeximg{
+	display: none;
+}
+
+@media screen and (min-width:790px ) {
+	.indeximg{
+		display: block;
+	}
+	.indeximg2{
+		display: none;
+	}
+}
+
+
+/* メイン */
+/* index.html */
+main{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.border1-1{
+	margin-top: 5px;
+	margin-bottom: 100px;
+	padding-top: 1px;
+	background-color: #242424;
+}
+.h1-1-1{
+	text-align: center;
+}
+.kuuhaku{
+	margin-bottom: 90px;
+}
+.sneakers1-Box{
+	text-align :center;
+	margin: 0 auto;
+
+}
+.sneakers1-Box img{
+	border-radius: 0px;
+	width: 90%;
+	border-radius: 8px;
+}
+.news-koumoku p{
+	text-align: center;
+	margin-bottom: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-size: 18px;
+}
+.news-koumoku{
+	text-decoration:underline;
+	text-align :center;
+	margin-bottom: 40px;
+}
+.news-koumoku a:hover{
+	color:darkgoldenrod;
+}
+.news-koumoku a{
+	text-decoration: none;
+	color: #242424;
+}
+.flex-1{
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+}
+.flex-2 {
+	text-align :center;
+}
+.about-br{
+	display:block;
+}
+.p-1-1{
+	font-size: 15px;
+	margin-top: 6px;
+	margin-bottom: 20px;
+}
+
+.border1-2{
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding-bottom: 1px;
+	background-color: #242424;
+}
+
+/* お知らせ-index */
+.osirase{
+	font-size: 25px;
+	text-align: center;
+}
+.osirase-p{
+	text-align :center;
+	margin-bottom: 20px;
+	font-size: 22px;
+	color:dimgrey;
+}
+.newsbox{
+	margin: 0 auto;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.news-img{
+	height: auto;
+}
+.in-news{
+	width: 80%;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 20px;
+	background-color: #ddd;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.newstr{
+	display: block;
+}
+.buttonbox{
+	margin-top:  20px;
+	text-align: center;
+}
+.buttonbox-x{
+	text-align: center;
+	margin-bottom :15px;
+}
+.buttonbox-2{
+	text-align: center;
+	margin-top:  10px;
+	margin-right: 10%;
+	margin-bottom: 30px;
+}
+.button3{
+	text-align: center;
+	background-color:#fff;
+	color: #242424;
+	border: 2px solid #777;
+	border-radius: 7px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.buttonab{
+	text-align: center;
+	background-color:#fff;
+	color: #242424;
+	border: 2px solid #777;
+	border-radius: 7px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.button4{
+	background-color:#242424;
+	color: #fff;
+	border: 2px solid #777;
+	border-radius: 7px;
+	padding: 6px 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 20px;
+}
+@media screen and (min-width: 790px) {
+	.buttonbox{
+		margin-top:  0px;
+		text-align: center;
+	}
+	.buttonbox-x{
+		display :none;
+	}
+	.button3{
+		text-align: center;
+		background-color:#fff;
+		color: #242424;
+		border: 2px solid #777;
+		border-radius: 7px;
+		padding: 5px;
+		font-size: 18px;
+		margin: 10px;
+	}
+	.sneakers1-Box{
+		text-align :center;
+		margin: 0;
+	}
+}
+.button2{
+	text-align: center;
+	background-color:#242424;
+	color: #fff;
+	border: 2px solid #777;
+	border-radius: 7px;
+	padding: 5px;
+	font-size: 18px;
+}
+/* 入荷・シューズ-index */
+.arrival p{
+	text-align: right;
+	padding-right: 15%;
+}
+.arrival-title{
+	text-align: center;
+}
+.in-arrival1{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.in-arrival2{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.in-arrival1 p{
+	font-size: 22px;
+}
+.in-arrival2 p{
+	font-size: 22px;
+}
+.arrival-img{
+	width: 80%;
+	height: auto;
+}
+
+
+
+@media screen and (min-width: 790px) {
+.arrival{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.in-arrival1{
+	text-align: center;
+	margin-right: 15px;
+}
+.in-arrival2{
+	text-align: center;
+
+}
+.p-1-1{
+	font-size: 15px;
+	margin-top: 8px;
+	margin-bottom: 30px;
+}
+.button2{
+	margin-left: 20%;
+	text-align: center;
+	background-color:#242424;
+	color: #fff;
+	border: 2px solid #777;
+	border-radius: 7px;
+	padding: 3px;
+}
+}
+
+/* shop */
+.shop-title{
+	text-align: left;
+	margin: 30px 0px 40px 20%;
+	
+}
+
+.shop-list{
+	list-style-type: none;
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	text-decoration: underline;
+}
+.shop-list a:hover{
+	color:darkgoldenrod
+}
+
+.shop-list li{
+	font-size: 14px;
+	margin-left: 13px;
+	margin-right: 13px;
+	color: #242424;
+	float: left;
+}
+.shop-list a{
+	color: #242424;
+}
+.arrival-title2{
+	margin-bottom:30px;
+	margin-top: 60px;
+	text-align :center;
+}
+@media screen and (min-width: 790px) {
+	.arrival-title2{
+		margin-bottom:30px;
+		margin-top: 60px;
+		text-align :center;
+	}
+	.shop-list{
+		list-style-type: none;
+		width: 100%;
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		text-decoration: underline;
+	}
+}
+.nedan{
+	color: #696969;
+}
+.ps{
+	margin: 60px 10px 0px 10px;
+	text-align: center;
+}
+
+/* about.html */
+.aboutimg1{
+	height: auto;
+	width: 85%;
+	margin: 10px;
+	border-radius: 50%;
+}
+.abouth2-1{
+	text-align: center;
+	margin: 10px;
+	margin-top: 15px;
+}
+.aboutp1{
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.aboutp2{
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 15px;
+	color:crimson;
+}
+
+.aboutp1 p{
+	padding-bottom: 4px;
+}
+.aboutimg2{
+	border: solid #fff 1px;
+	width: 45%;
+}
+.border1-about{
+	margin-top: 5px;
+	margin-bottom: 40px;
+	padding-top: 1px;
+	background-color: #242424;
+}
+.flex-about{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.abouth3{
+	margin-top: 10px;
+	text-align :center;
+	margin-bottom: 18px;
+	font-size: 21px;
+}
+.buttonabout{
+	text-align: center;
+}
+
+
+	/* フッター */
+	footer{
+		height: 210px;
+		margin-top: 10px;
+		background-color: #242424;
+		color: #fff;
+	}			
+
+	.footer-icon{
+		float: left;
+		height: 50px;
+		width: 50px;
+		border-radius: 100%;
+		margin: 5px;
+		margin-top: 30px;
+		margin-left: 30px;
+	 }
+	 .footer-list{
+		float: right;
+		margin-left: auto;
+		margin-top: 20px;
+		margin-right: 45px;
+	 }
+	 .footer-list ul{
+		list-style-type: none;
+		padding-bottom: 10px;
+	}
+	.footer-list a {
+		padding: 0.6rem 0;
+		text-decoration: none;
+		color: #fff;
+	}
+	.footer-list a:hover{
+		text-decoration: none;
+		color:darkgoldenrod;
+	}
+	.footer-main{
+		display: flex;
+	}
+	.footer-list li{
+		padding-bottom: 16px;
+		font-size: 18px;
+	}
+
+
+	/* news-html 1234 */
+	.news1-koumoku{
+		padding: 10px;
+		padding-left: 30px;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 50px;
+		border-top: 1px solid #696969;
+	}
+
+	.news1-koumoku p{
+		margin-bottom: 10px;
+	}
+	.news1-koumoku a{
+		text-decoration: underline;
+		color: #696969;
+
+	}
+	.newsimg{
+		width: 200px;
+		border-radius: 5px;
+		margin: 30px 0px;
+	}
+	.news1a{
+		text-align: center;
+	}
+	.newsosirase{
+		margin-top: 60px;
+		margin-bottom: 3px;
+	}
+	.newsosirase2{
+		margin-top: 30px;
+		margin-bottom: 3px;
+	}
+	.newsosirase-p{
+		margin-bottom: 5px;
+		font-size: 15.5px;
+		color: #696969;
+	}
+	.newsosirase-p2{
+		margin-bottom: 60px;
+		font-size: 15.5px;
+		color: #696969;
+	}
+	.news-flexp{
+			text-align: left;
+			padding-left: 4%;
+			padding-right: 4%;	
+	}
+	.news-flexp2{
+		color: #696969;
+		font-size: 15px;
+		margin-right: -8%;
+	}
+	.newsimg1{
+		display: none;
+	}
+	.newsimg2{
+		width: 300px;
+		border-radius: 5px;
+		margin: 30px 0px;
+	}
+	.newsimg1-3{
+		width: 300px;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom :20px;
+	}
+	.news-flex3{
+		text-align: left;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.news-flex3-2{
+		margin-top: 30px;
+		text-align: left;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.news1-koumoku a:hover{
+	color:darkgoldenrod;
+	}
+	.newsimg1-2{
+		width: 280px;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom :20px;
+		object-fit: cover;
+	}
+
+
+
+
+
+	/*  商品ページ  */
+	.syouhin-img{
+		text-align: center;
+	}
+	.flex-syouhin img{
+		text-align: center;
+		max-width: 90%;
+		border-radius: 4px;
+		margin-top: 20px;
+	}
+	.flex-syouhin p{
+		margin-left: 8%;
+		font-size: 20px;
+		margin-top: 5px;
+		margin-bottom: 4px;
+	}
+	.tanaka{
+		text-align: left;
+		margin-left: 10%;
+		font-size: 18px;
+	}
+	.tanaka p{
+		font-size: 20px;
+		color: red;
+		margin-top: 8px;
+	}
+	.tanakabox{
+		display: flex;
+	}
+	.tanaka-flex{
+		display: flex;
+	}
+
+	.maeni2 img{
+		width: 40px;
+	}
+	.maeni2{
+		display: block;
+		margin-left: 2%;
+		margin-bottom: 2px;
+		font-size: 18px;
+	}
+
+
+	.syouhin-flex{
+		padding-top: 40px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	.syouhin-flex img{
+		max-width: 260px;
+
+	}
+	.flex-syouhin3 h2{
+		border-top: 1px solid #242424;
+		margin-top: 20px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.img-syouhin{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.kounyuuwhite{
+		text-align :center;
+		background-color: #ddd;
+		color: #242424;
+		margin: 20px 5%;
+		padding: 50px 10px;
+		margin-bottom: 100px;
+		border: 1px solid #242424;
+	}
+	.buttonbox31{
+		margin-top: 5px;
+		padding: 5px;
+		font-size: 20px;
+	}
+	.button31{
+		background-color: #242424;
+		color: #fff;
+		border-radius: 7px;
+		padding:  5px 10px;
+	}
+	.button312{
+		background-color: #242424;
+		color: #fff;
+		border-radius: 5px;
+		padding:  5px 10px;
+		font-size: 18px;
+	}
+	.button313{
+		background-color: #242424;
+		color: #fff;
+		border-radius: 7px;
+		padding:  5px 10px;
+		font-size: 18px;
+	}
+	.button314{
+		background-color: #fff;
+		color: #242424;
+		border-radius: 7px;
+		padding:  5px 10px;
+		font-size: 18px;
+	}
+	.button3121{
+		background-color: #242424;
+		color: #fff;
+		border-radius: 7px;
+		padding:  5px 10px;
+		font-size: 22px;
+	}
+	.button3122{
+		background-color: #fff;
+		color: #242424;
+		border-radius: 7px;
+		padding:  5px 10px;
+		font-size: 22px;
+		margin-top: 10px;
+	}
+	.kounyuuwhite p{
+		font-size: 20px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.kounyuublack{
+		text-align :center;
+		color: #242424;
+		margin: 20px 5%;
+		padding: 50px 10px;
+		margin-bottom: 20px;
+	}
+	.kounyuublack p{
+		text-align: center;
+		font-size: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 4px;
+		margin-bottom: 10px;
+	}
+	.kounyuublack h4{
+		font-size: 18px;
+		margin-left: 10%;
+		margin-right: 10%;
+		text-decoration: none;
+	}
+	.kounyuublack input{
+		margin-top: 6px;
+	}
+
+
+	
+	.kounyuublackx{
+		text-align :center;
+		color: #242424;
+		margin: 20px 5%;
+		padding: 10px 10px;
+		margin-bottom: 20px;
+	}
+	.kounyuublackx p{
+		text-align: center;
+		font-size: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 4px;
+		margin-bottom: 10px;
+	}
+	.kounyuublackx h4{
+		font-size: 18px;
+		margin-left: 10%;
+		margin-right: 10%;
+		text-decoration: none;
+	}
+	.kounyuublackx input{
+		margin-top: 6px;
+	}
+
+
+
+	.kounyuublack2{
+		text-align :center;
+		color: #242424;
+		margin: 20px 5%;
+		padding: 30px 10px;
+		margin-bottom: 20px;
+	}
+	.kounyuublack2 p{
+		text-align: center;
+		font-size: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 4px;
+		margin-bottom: 10px;
+	}
+	.kounyuublack2 h4{
+		font-size: 18px;
+		margin-left: 10%;
+		margin-right: 10%;
+		text-decoration: none;
+	}
+	.kounyuublack2 input{
+		margin-top: 6px;
+	}
+	.kounyuup31{
+		margin-top: 30px;
+	}
+	.kounyuusimasuh2{
+		text-align: center;
+		font-size: 25px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.kounyuusimasuh22{
+		text-align: center;
+		font-size: 25px;
+		margin-top: 70px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.kounyuusimasuh2x{
+		text-align: center;
+		font-size: 25px;
+		margin-top: 60px;
+		margin-bottom: 20px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+
+	.kounyuured{
+		color: rgb(243, 1, 54);
+	}
+	.kounyuuyellow{
+		color:rgb(24, 71, 224)
+	}
+	.black{
+		background-color: #242424;
+		color: #fff;
+	}
+
+	.payment{
+		background-color :#ddd;
+		color: #242424;
+		border: 1px solid #242424;
+		padding: 10px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.radio{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.flex-kanryou{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
+	.flex-kanryou div{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+
+	@media screen and (min-width: 790px) {
+
+		.kanryoup{
+			margin-bottom: 30px;
+		}
+		.kounyuup31{
+			margin-top: 50px;
+		}
+		.button31{
+			background-color: #242424;
+			color: #fff;
+			border-radius: 7px;
+			padding:  5px 10px;
+			margin-top: 10px;
+		}
+		.button312{
+			background-color: #242424;
+			color: #fff;
+			border-radius: 5px;
+			padding:  5px 10px;
+			margin-top: 30px;
+		}
+		.button3122{
+			background-color: #fff;
+			color: #242424;
+			border-radius: 7px;
+			padding:  5px 10px;
+			font-size: 22px;
+			margin-top: 40px;
+		}
+
+		.syouhin-flex{
+			display: flex;
+			justify-content: center;
+			padding-top: 40px;
+			padding-bottom: 20px;
+		}
+		.syouhin-flex img{
+			max-width: 250px;
+	
+		}
+		.maeni2{
+			display: block;
+			margin-left: 12%;
+			margin-bottom: 20px;
+			font-size: 18px;
+			margin-top: -5px;
+		}
+		.flex-syouhin{
+			display: flex;
+			margin-bottom: 10%;
+		}
+		.flex-syouhin p{
+			display: none;
+		}
+		.syouhin-img{
+			max-width: 30%;
+			margin-left: 10%;
+		}
+		.tanaka{
+			border-left: 1px solid #242424;
+			padding-left: 3%;
+			padding-top: 10%;
+			text-align: left;
+		}
+		.tanaka h3{
+			display: block;
+		}
+		.tanaka p{
+			display: block;
+			margin-left: 10px;
+			margin-bottom: 7px;
+		}
+		.tanaka-flex{
+			display: flex;
+		}
+
+	}
+/* PC用　制作　*/
+@media screen and (min-width: 790px) {
+	.newsimg1-2{
+		display: none;
+	}
+	.indexflex{
+		display: flex;
+		justify-content: center;
+	}
+	.indexflex img{
+		border-radius: 5px;
+		justify-content: center;
+		width: 100%;
+		max-width: 550px;
+	}
+
+	.flex-1{
+		text-align: left;
+		margin-top: 40px;
+		margin-right: 10%;
+		margin-left: 8%;
+	}
+
+	.flex-2{
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+	}
+	.flex-3{
+		margin-left: 8%;
+		margin-top: 30px;
+	}
+	.newsbox{
+		display: flex;
+		justify-content: center;
+	}
+	.osirase{
+		text-align: center;
+	}
+	.osirase-p{
+		text-align :center;
+		margin-bottom :70px;
+	}
+	.arrival-title{
+		text-align :center;
+	}
+	.arrival-img{
+		width: 100%;
+		max-width: 350px;
+		height: auto;
+	}
+	.in-news{
+		width: 500px;
+	}
+	.border1-2{
+		margin-bottom: 80px;
+	}
+	.aboutimg1{
+		height: auto;
+		width: 20%;
+		margin: 10px;
+		border-radius: 30px;
+	}
+	.aboutimg2{
+		width: 25%;
+	}
+	.border1-about{
+		margin-top: 5%;
+		margin-bottom: 10%;
+		padding-top: 1px;
+		background-color: #242424;}
+	.arrival p{
+		text-align: left;
+		padding-left: 5%;
+	}
+	.news-koumoku p{
+		text-decoration:underline;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.news-koumoku{
+		margin-bottom: 70px;
+	}
+
+
+	/*　ニュースファイルのhtml */
+	.news-flex{
+		display: flex;
+		justify-content: center;
+	}
+	.news1a{
+		text-align :center;
+		margin-left: 10%;
+
+	}
+	.newsosirase{
+		font-size: 25px;
+	}
+	.newsosirase-p{
+		margin-bottom: 50px;
+		font-size: 22px;
+		color: #696969;
+	}
+	.newsimg1{
+		display: block;
+		width: 300px;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom :20px;
+		object-fit: cover;
+	}
+
+	.newsimg{
+		width: 300px;
+		border-radius: 10px;
+		margin-top: 40px;
+		margin-bottom :20px;
+		object-fit: cover;
+	}
+	.newsimg2{
+		width: 370px;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom :20px;
+		object-fit: cover;
+	}
+	.news-flexp{
+		text-align: left;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.news-flexp2{
+		text-align: right;
+		padding-left: 10%;
+		padding-right: 10%;
+		color: #696969;
+		margin-right: -8%;
+	}
+	.news-flex3{
+		margin-top: 30px;
+		text-align: left;
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 50%;
+	}
+	.news-flex3-2{
+		margin-top: 30px;
+		text-align: left;
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 50%;
+	}
+
+	.news1-koumoku{
+		padding: 10px;
+		padding-left: 30px;
+		margin-left: 8%;
+		margin-right: 5%;
+		border-top: none;
+		border-left: 1px solid #696969;
+
+	}
+	.news1-koumoku a{
+		text-decoration: underline;
+		color: #696969;
+
+	}
+	.news1-koumoku h5{
+		margin-bottom: 10px;
+	}
+	.news1-koumoku p{
+		margin-bottom: 20px;
+	}
+	.news-flexnews{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-bottom :20px;
+	}
+
+
+	.footer-list{
+		float: right;
+		margin-left: auto;
+		margin-top: 20px;
+		margin-right: 10%;
+	 }
+	 .footer-list ul{
+		display: flex;
+		list-style-type: none;
+		padding-bottom: 10px;
+	}
+	.footer-list a {
+		padding: 0.6rem 0;
+		text-decoration: none;
+		color: #fff;
+	}
+	.footer-list a:hover{
+		text-decoration: none;
+		color:darkgoldenrod;
+	}
+	.footer-main{
+		display: flex;
+	}
+	.footer-list li{
+		margin-left: 7%;
+		margin-right:7%;
+		padding-bottom: 16px;
+		font-size: 18px;
+	}
+}

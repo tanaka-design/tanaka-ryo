@@ -1,0 +1,36 @@
+/* 動くウェブデザイン帳を参照 */
+ @media screen and (min-width: 790px) {
+
+.mask{
+	display: block;
+	line-height: 0;
+	overflow: hidden;
+	margin-bottom: 10px;
+	
+}
+
+.in-arrival1 img{
+	transform: scale(1);
+	/*移り変わる速さの変更は次の行の数値を変更　*/
+	transition: .4s ease-in-out;
+}
+.in-arrival1 a:hover img{
+	/* hoverした時の変化 */
+	/* 拡大の率、回転の値の変更は次の行の数値を変更 */
+	transform: rotate(5deg) scale(1.1);
+}
+
+/*　上のin-arrival1と同じ構文 */
+.in-arrival2 img{
+	transform: scale(1);
+	transition: .4s ease-in-out;
+}
+.in-arrival2 a:hover img{
+	transform: rotate(5deg) scale(1.1);
+}
+
+
+
+
+}
+

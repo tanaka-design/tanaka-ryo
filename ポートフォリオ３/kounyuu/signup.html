@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- 動くウェブデザイン帳-->
+        <link rel="stylesheet" type="text/css" href="../css/ugoku.css">
+        <link rel="stylesheet" type="text/css" href="../css/hamburger.css">
+    <title>新規登録</title>
+</head>
+
+
+<body>
+<!-- header -->
+    <header>
+    <div class="header-main">
+        <h1><a href="index.html">TANAKASHOES</a></h1>
+
+        <div class="openbtn"><span></span><span></span><span></span></div>
+
+        <!-- ここからメニュー -->
+        <nav id="g-nav">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../shop.html">shop</a></li>
+                    <li><a href="../about.html">about</a></li>
+                    <li><a href="../news.html">news</a></li>
+                </ul>
+        </nav>
+    </div>
+    </header>
+    
+<!-- main -->
+    <main>
+        <p class="maeni2"><a href="#" onclick="history.back(); return false;"><img src="../img/maeni.png"></a></p>
+
+        <h2 class="kounyuusimasuh2">新規登録</h2>
+        <div class="kounyuublack">
+            <h4>お名前</h4>
+            <p><input type="text" name="text" id="oname"></p><br>
+            <h4>メールアドレスまたは電話番号</h4>
+            <p><input type="text" name="text" id="phone"></p><br>
+            <h4>郵便番号</h4>
+            <p><input type="text" name="text" id="post"></p><br>
+            <h4>ご住所</h4>
+            <p><input type="text" name="text" id="address"></p><br>
+
+            <h4>お支払い方法</h4>
+            <div class="payment"  required="required">
+                <div class="radio"><input type="radio" meta name="payment" value="クレジットカード" id="radio">クレジットカード</div>
+                <div class="radio"><input type="radio" meta name="payment" value="コンビニ払い" id="radio">コンビニ払い</div>
+                <div class="radio"><input type="radio" meta name="payment" value="銀行引き落とし" id="radio">銀行引き落とし</div>
+            </div>
+
+            <div class="buttonbox">
+                <button type="button" name="button3" value="value" class="button312"  id="sign2">次に進む</button>
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+
+    
+<!-- 動くウェブデザインアイディア帳 -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="../script/ugoku.js"></script>
+<script src="../script/check.js"></script>
+</body>
+</html>
