@@ -58,11 +58,11 @@ header{
 }
 .footer-main h1{
 	font-size:23px;
-	margin-left: 2%;
+	padding-left: 5%;
 }
 .footer-main a{
 	text-decoration: none;
-	color :#fff;
+	color :#eee;
 }
 @media screen and (min-width: 790px) {
 	.header-main h1{
@@ -136,7 +136,10 @@ main{
 	text-align: center;
 }
 .kuuhaku{
-	margin-bottom: 90px;
+	margin-bottom: 40px;
+}
+.kuuhakua{
+	margin-bottom: 70px;
 }
 .sneakers1-Box{
 	text-align :center;
@@ -195,10 +198,17 @@ main{
 .osirase{
 	font-size: 25px;
 	text-align: center;
+	margin-top: 30px;
 }
 .osirase-p{
 	text-align :center;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+	font-size: 22px;
+	color:dimgrey;
+}
+.osirase-p2{
+	text-align :center;
+	margin-bottom: 30px;
 	font-size: 22px;
 	color:dimgrey;
 }
@@ -479,7 +489,7 @@ main{
 
 	/* フッター */
 	footer{
-		height: 210px;
+		height: 140px;
 		margin-top: 10px;
 		background-color: #242424;
 		color: #fff;
@@ -494,18 +504,19 @@ main{
 		margin-top: 30px;
 		margin-left: 30px;
 	 }
-	 .footer-list{
-		float: right;
+	 .footer-list li{
 		margin-left: auto;
-		margin-top: 20px;
-		margin-right: 45px;
+		margin-right: 10px;
+		margin-left: 10px;
 	 }
 	 .footer-list ul{
+		display: flex;
+		justify-content: right;
+		padding-right: 20px;
 		list-style-type: none;
 		padding-bottom: 10px;
 	}
 	.footer-list a {
-		padding: 0.6rem 0;
 		text-decoration: none;
 		color: #fff;
 	}
@@ -514,7 +525,7 @@ main{
 		color:darkgoldenrod;
 	}
 	.footer-main{
-		display: flex;
+		padding-top: 4px;
 	}
 	.footer-list li{
 		padding-bottom: 16px;
@@ -1143,16 +1154,17 @@ main{
 	}
 
 
-	.footer-list{
-		float: right;
-		margin-left: auto;
-		margin-top: 20px;
-		margin-right: 10%;
-	 }
+	footer{
+		height: 100px;
+		text-align :center;
+	}
 	 .footer-list ul{
+		text-align: center;
 		display: flex;
+		justify-content: center;
 		list-style-type: none;
 		padding-bottom: 10px;
+		padding-top: 20px;
 	}
 	.footer-list a {
 		padding: 0.6rem 0;
@@ -1163,13 +1175,14 @@ main{
 		text-decoration: none;
 		color:darkgoldenrod;
 	}
-	.footer-main{
-		display: flex;
+	.footer-main h1{
+		display: none;
 	}
 	.footer-list li{
 		margin-left: 7%;
 		margin-right:7%;
-		padding-bottom: 16px;
-		font-size: 18px;
+		font-size: 19px;
 	}
+	.footer-list{
+	 }
 }
