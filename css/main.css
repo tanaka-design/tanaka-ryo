@@ -264,6 +264,9 @@ header a{
     text-align: center;
     margin: 8px;
 }
+.indexcontactp a{
+    color: #676767;
+}
 .blackblue{
     background-color: #232F39;
 }
