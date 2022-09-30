@@ -10,6 +10,13 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
 
 
 
+$('.rubberBand').on('inview',function(event, isInView) {
+    if (isInView) {//
+$(this).addClass('animate__animated animate__bounce');//
+}else {//
+$(this).removeClass('animate__animated animate__bounce');//
+}
+});
 
 
 
